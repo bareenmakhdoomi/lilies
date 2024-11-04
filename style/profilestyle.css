@@ -1,0 +1,70 @@
+
+
+/* Universal reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-block-end: 20px;
+}
+
+.logo-img {
+    inline-size: 50px;
+    margin-inline-end: 10px;
+}
+
+
+
+
+main {
+    margin-inline-start: 270px; 
+    padding: 20px;
+}
+
+.profile-container,
+.delete-account {
+    background: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-block-end: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-block-start: 0;
+}
+
+.form-group {
+    margin-block-end: 15px;
+}
+
+label {
+    display: block;
+    margin-block-end: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    inline-size: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color:#1abc9c;;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    inline-size: 100%;
+}
+
+

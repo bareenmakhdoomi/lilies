@@ -1,0 +1,268 @@
+/* Universal reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    padding: 0 20px;
+  
+    display: flex;
+    block-size: 100vh;
+}
+.cart-count {
+    font-size: 0.8em; /* Smaller size */
+    vertical-align: super; /* Superscript style */
+    color: #ff0000; /* Change color as needed */
+}
+.logo {
+    display: flex;
+    align-items: center;
+    inline-size: 92px;
+    block-size: 46px;
+    inline-size: 320px;
+    padding: 26px 27px 36px 25px;
+    gap: 0px;
+    border-radius: 20px 0px 0px 0px;
+    opacity: 0px;
+
+  }
+  
+  .logo-img {
+    inline-size: 40px;
+    margin-inline-end: 10px;
+  }
+  
+  .logo-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color:#00302E;
+  }
+/* Sidebar */
+.sidebar {
+    inline-size: 20%;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    margin-block-end: 40px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    margin-block-end: 15px;
+    border-radius: 5px;
+}
+
+.sidebar a.active, .sidebar a:hover {
+    background-color: #dfe6e9;
+}
+
+/* Main content */
+.main-content {
+    inline-size: 80%;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.main-content h2 {
+    margin-block-end: 20px;
+    font-size: 28px;
+}
+
+/* Meal cards grid */
+.meal-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Meal cards */
+.meal-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.meal-card img {
+    inline-size: 80px;
+    block-size: 80px;
+    border-radius: 50%;
+    margin-block-end: 15px;
+}
+
+.meal-info {
+    flex: 1;
+}
+
+.meal-info h3 {
+    font-size: 18px;
+    margin-block-end: 10px;
+}
+
+.meal-info p {
+    font-size: 14px;
+    color: #666;
+}
+
+.add-to-cart {
+    background-color: #1abc9c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.total-button {
+    display: block;
+    margin: 20px auto;
+    padding: 15px 30px;
+    background-color:#1abc9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+.order-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.order-card {
+    inline-size: calc(25% - 20px); 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.item-detail-overlay {
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.item-detail-overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.item-detail-content {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    max-inline-size: 600px;
+    inline-size: 90%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.item-detail-image img {
+    inline-size: 100%;
+    max-inline-size: 350px; 
+    block-size: auto;
+    border-radius: 8px;
+    margin-block-end: 20px;
+}
+
+#itemTitle {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+#itemDescription {
+    font-size: 1em;
+    color: #666;
+    margin-block-end: 20px;
+}
+
+.item-detail-info {
+    display: flex;
+    justify-content: space-between;
+    inline-size: 100%;
+    margin-block-end: 20px;
+}
+
+.item-detail-info span {
+    font-size: 0.9em;
+    color: #333;
+}
+
+/* Center-align and style quantity controls */
+.quantity-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-block-end: 25px;
+}
+
+.quantity-controls button {
+    padding: 8px 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.add-to-cart-button {
+    padding: 12px 25px;
+    font-size: 1.1em;
+    background-color: #1abc9c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+    background-color: #17a085;
+}
+
+/* Close button styling */
+.close-detail {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    inset-block-start: 20px;
+    inset-inline-end: 20px;
+}
+
+.cart-count {
+    font-size: 0.8em;
+    vertical-align: super;
+    color: #ff0000;
+}

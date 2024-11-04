@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/dashboardstyle.css">
+    <link rel="stylesheet" href="style/your-cart.css">
+    <link rel="stylesheet" href="style/orders.css">
+    <title>Lilies Dashboard</title>
+  
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logo">
+            <img src="images/logo.webp" alt="Lilies Logo" class="logo-img"> <!-- Logo added here -->
+            <span class="logo-text">Lilies</span>
+        </div>
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="profile.html">Your Profile</a>
+        <a href="orders.html" id="open-orders-link">Orders</a> <!-- Orders link to open the overlay -->
+        <a href="your-cart.html">Your Cart <span id="cart-count" class="cart-count"></span></a>
+    </div>
+
+    <div class="main-content">
+        <h2 id="greeting"></h2>
+        <p>What delicious meal are you craving today?</p>
+
+        <div class="meal-grid">
+            <div class="meal-card">
+                <img src="IMAGES/dashboard1 (1).webp" alt="Stir Fry Pasta">
+                <div class="meal-info">
+                    <h3>Stir Fry Pasta</h3>
+                    <p>The in-house pasta and <br> chicken by Chef Moose</p>
+                    <p>NGN 1,000.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="meal-card">
+                <img src="IMAGES/dashboard1 (2).webp" alt="Meatballs">
+                <div class="meal-info">
+                    <h3>Meatballs</h3>
+                    <p>The in-house pasta and <br> chicken by Chef Moose</p>
+                    <p>NGN 1,000.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="meal-card">
+                <img src="IMAGES/dashboard1 (3).webp" alt="Burger">
+                <div class="meal-info">
+                    <h3>Burger</h3>
+                    <p>The in-house pasta and <br> chicken by Chef Moose</p>
+                    <p>NGN 1,000.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="meal-card">
+                <img src="IMAGES/dashboard1 (5).webp" alt="Soup">
+                <div class="meal-info">
+                    <h3>Soup</h3>
+                    <p>The in-house pasta and <br> chicken by Chef Moose</p>
+                    <p>NGN 1,000.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="meal-card">
+                <img src="IMAGES/dashboard1 (6).webp" alt="Pan Cake">
+                <div class="meal-info">
+                    <h3>Pan Cake</h3>
+                    <p>The in-house pasta and <br> chicken by Chef Moose</p>
+                    <p>NGN 1,000.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="meal-card">
+                <img src="IMAGES/dashboard1 (7).webp" alt="Fried Rice">
+                <div class="meal-info">
+                    <h3>Fried Rice</h3>
+                    <p>The in-house pasta and <br> chicken by Chef Moose</p>
+                    <p>NGN 1,000.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="orders-overlay" id="ordersOverlay">
+        <div class="orders-content">
+            <h3>Your Orders</h3>
+            <div class="order-items" id="orders-list">
+                <div class="order-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Qty</th>
+                                <th>Price</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="order-items"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="javascript/dashboard.js"></script>
+    <script src="javascript/your-cart.js"></script>
+    <script src="javascript/orders.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+/* Universal reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.checkout-overlay {
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline-end: 0;
+    inline-size: 40%;
+    block-size: 100vh; /* Full viewport height */
+    background-color: rgba(255, 255, 255, 1); /* Solid white background */
+   
+    z-index: 1000;
+    box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.1); /* Shadow for separation */
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.checkout-overlay.open {
+    display: block; 
+}
+
+.checkout-content {
+    inline-size: 100%;
+    align-items: center;
+}
+
+.cart-count {
+    font-size: 0.8em; 
+    vertical-align: super; 
+    color: #ff0000;
+}
+    
+.checkout-content h3 {
+    margin-block-end: 20px;
+    font-size: 1.5em;
+    color: #004d40;
+}
+
+.checkout-content label {
+    display: block;
+    font-weight: bold;
+    margin-block-start: 10px;
+    color: #333;
+}
+
+.checkout-content input {
+    inline-size: 100%;
+    padding: 8px;
+    margin-block-start: 5px;
+    margin-block-end: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#make-payment {
+    inline-size: 100%;
+    padding: 10px;
+    background-color: #004d40;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#make-payment:hover {
+    background-color: #00695c;
+}

@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.orders-overlay {
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline-end: 0;
+    inline-size: 50%;
+    block-size: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    display: none;
+    z-index: 1000;
+    box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.orders-overlay .orders-content {
+    inline-size: 100%;
+    block-size: 100%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.orders-overlay h3 {
+    margin-block-end: 20px;
+    font-size: 1.5em;
+    color: #004d40;
+}
+
+.orders-overlay .order-table {
+    inline-size: 100%;
+    margin-block-end: 20px;
+}
+
+.orders-overlay .order-table table {
+    inline-size: 100%;
+    border-collapse: collapse;
+}
+
+.orders-overlay .order-table th,
+.orders-overlay .order-table td {
+    padding: 10px;
+    text-align: start;
+}
+
+.orders-overlay .order-table th {
+    font-weight: bold;
+    color: #333;
+}
+
+.orders-overlay .order-table td {
+    border-block-end: 1px solid #ddd;
+}
+
+.orders-overlay .order-table .status-delivered {
+    color: green;
+}
+
+.orders-overlay .order-table .status-cooking {
+    color: orange;
+}
+
+.order-item-image {
+    inline-size: 50px;
+    block-size: 50px;
+    border-radius: 5px;
+    margin-inline-end: 10px;
+}
+
+.remove-order-button {
+    background-color: transparent;
+    color: red;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.remove-order-button:hover {
+    text-decoration: underline;
+}

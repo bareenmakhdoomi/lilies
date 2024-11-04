@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style/loginstyle.css">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <section class="image-section">
+            <img src="IMAGES/login.webp" alt="Couple Cooking">
+        </section>
+        <section class="login-section">
+            <div class="login-content">
+                <h1>Welcome Back!</h1>
+                <form id="loginForm" class="login-form">
+                    <div class="input-group">
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password" class="sr-only">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="login-button">Login</button>
+                </form>
+                <nav class="additional-links">
+                    <a href="register.html">Create an account</a>
+                    <a href="forgot-password.html">Forgot Password</a>
+                </nav>
+            </div>
+        </section>
+    </main>
+    <script src="javascript/login.js">
+    </script>
+</body>
+</html>

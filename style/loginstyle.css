@@ -1,0 +1,137 @@
+/* Universal reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+
+.container {
+    display: flex;
+    inline-size: 100vw;
+    block-size: 100vh;
+    max-inline-size: 100%;
+    max-block-size: 100%;
+    background-color: #fff;
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-section img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+}
+
+.login-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.login-content {
+    inline-size: 100%;
+    max-inline-size: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: #00302E; 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 24px;
+    margin-block-end: 20px;
+}
+
+.input-group {
+    margin-block-end: 15px;
+    text-align: start;
+}
+
+input {
+    inline-size: 1446px;
+    inline-size: 100%;
+    padding: 12px;
+    margin-block-start: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.toggle-password {
+    margin-inline-start: 10px;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.login-button {
+
+    inline-size: 100%;
+    padding: 12px;
+    background-color:#00302E;;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: rgba(0, 48, 46, 0.5);;
+}
+
+.additional-links {
+    color: #00302E;
+    margin-block-start: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.additional-links a {
+    color:#00302E;
+    text-decoration: none;
+}
+
+.additional-links a:hover {
+    text-decoration: underline;
+}
+
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .login-button {
+        font-size: 18px;
+    }
+
+    .login-section {
+        padding: 40px;
+    }
+}
+.account{
+    font-family: Poppins;
+font-size: 14px;
+font-weight: 700;
+line-height: 33px;
+text-align: end;
+
+}

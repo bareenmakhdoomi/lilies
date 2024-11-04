@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/dashboardstyle.css">
+    <link rel="stylesheet" href="style/profilestyle.css">
+    <title>Your Profile</title>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logo">
+            <img src="images/logo.webp" alt="Lilies Logo" class="logo-img"> 
+            <span class="logo-text">Lilies</span>
+        </div>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="profile.html" class="active">Your Profile</a>
+        <a href="orders.html">Orders</a>
+        <a href="your-cart.html">Your Cart</a>
+    </div>
+
+    <main>
+        <section class="profile-container">
+            <h2>Account Settings</h2>
+            <form id="profileForm">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">New Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Leave blank to keep current password">
+                </div>
+
+                <button type="submit" id="updateProfileBtn">Update Profile</button>
+            </form>
+        </section>
+
+        <section class="delete-account">
+            <h2>Delete Account</h2>
+            <p>Click the button below to permanently delete your account.</p>
+            <button id="deleteAccountBtn">Delete Account</button>
+        </section>
+    </main>
+    <script src="javascript/profile.js"></script>
+</body>
+</html>

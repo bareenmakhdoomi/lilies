@@ -1,0 +1,154 @@
+/* Universal reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cart-count {
+    font-size: 0.8em; 
+    vertical-align: super; 
+    color: #ff0000; 
+}
+
+
+#cartOverlay {
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline-end: 0;
+    inline-size: 40%; 
+    block-size: 100vh;
+    background-color: rgba(255, 255, 255, 1); 
+   
+    z-index: 1000;
+    box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.1); 
+    overflow-y: auto;
+    padding: 20px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#cartOverlay.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cart-content {
+    background-color: #fff;
+    padding: 20px;
+    max-inline-size: 800px;
+    inline-size: 90%;
+    border-radius: 8px;
+}
+
+/* Cart Table */
+.cart-table {
+    inline-size: 100%;
+    border-collapse: collapse;
+}
+
+.cart-table th,
+.cart-table td {
+    padding: 10px;
+    text-align: start;
+    vertical-align: middle;
+}
+
+.cart-table th {
+    font-weight: bold;
+    color: #333;
+    border-block-end: 1px solid #ddd;
+}
+
+.cart-table td {
+    font-size: 0.9em;
+}
+
+.cart-table td img {
+    inline-size: 50px;
+    block-size: 50px;
+    margin-inline-end: 10px;
+    vertical-align: middle;
+}
+
+.cart-table .item-name {
+    display: flex;
+    align-items: center;
+}
+
+.cart-table .item-name span {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Quantity Buttons */
+.cart-table .quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+.cart-table .quantity-controls button {
+    background-color: #eee;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 0 5px;
+}
+
+.cart-table .quantity-controls button:hover {
+    background-color: #ddd;
+}
+
+/* Total Price */
+.cart-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    margin-block-start: 20px;
+    font-size: 1.2em;
+}
+
+.cart-footer .total-label {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.cart-footer .total-price {
+    color: #004d40;
+}
+
+#checkout-button {
+    display: block;
+    inline-size: 100%;
+    padding: 12px;
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-block-start: 15px;
+}
+
+#checkout-button:hover {
+    background-color: #00332a;
+}
+
+
+#make-payment {
+    inline-size: 100%;
+    padding: 15px;
+    background-color: #004d40;
+    color: #ecf0b2;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+#make-payment:hover {
+    background-color: #00392d;
+}

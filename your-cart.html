@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/dashboardstyle.css">
+    <link rel="stylesheet" href="style/your-cart.css">
+    <title>Your Cart</title>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logo">
+            <img src="images/logo.webp" alt="Lilies Logo" class="logo-img">
+            <span class="logo-text">Lilies</span>
+        </div>
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="profile.html">Your Profile</a>
+        <a href="orders.html">Orders</a>
+        <a href="your-cart.html" id="cart-link">Your Cart <span id="cart-count" class="cart-count">0</span></a>
+    </div>
+
+    <div class="main-content">
+        <h2 id="greeting"></h2>
+        <p>What delicious meal are you craving today?</p>
+
+        <div class="meal-grid">
+            <div class="meal-card" data-name="Stir Fry Pasta" data-description="The in-house pasta and chicken by Chef Moose" data-price="NGN 1,000.00" data-preptime="15 mins" data-availability="Available" data-image="IMAGES/dashboard1 (1).webp">
+                <img src="IMAGES/dashboard1 (1).webp" alt="Stir Fry Pasta">
+                <div class="meal-info">
+                    <h3>Stir Fry Pasta</h3>
+                    <p>The in-house pasta and <br> chicken by Chef Moose</p>
+                    <p>NGN 1,000.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        
+            <div class="meal-card" data-name="Meatballs" data-description="The finest meatballs by Chef Moose" data-price="NGN 1,000.00" data-preptime="10 mins" data-availability="Available" data-image="IMAGES/dashboard1 (2).webp">
+                <img src="IMAGES/dashboard1 (2).webp" alt="Meatballs">
+                <div class="meal-info">
+                    <h3>Meatballs</h3>
+                    <p>The finest meatballs by <br> Chef Moose</p>
+                    <p>NGN 1,000.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        
+            <div class="meal-card" data-name="Burger" data-description="Classic juicy burger by Chef Moose" data-price="NGN 1,500.00" data-preptime="12 mins" data-availability="Available" data-image="IMAGES/dashboard1 (3).webp">
+                <img src="IMAGES/dashboard1 (3).webp" alt="Burger">
+                <div class="meal-info">
+                    <h3>Burger</h3>
+                    <p>Classic juicy burger by <br> Chef Moose</p>
+                    <p>NGN 1,000.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        
+            <div class="meal-card" data-name="Soup" data-description="Freshly prepared soup by Chef Moose" data-price="NGN 800.00" data-preptime="20 mins" data-availability="Available" data-image="IMAGES/dashboard1 (5).webp">
+                <img src="IMAGES/dashboard1 (5).webp" alt="Soup">
+                <div class="meal-info">
+                    <h3>Soup</h3>
+                    <p>Freshly prepared soup by <br> Chef Moose</p>
+                    <p>NGN 1000.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        
+            <div class="meal-card" data-name="Pancake" data-description="Fluffy pancakes by Chef Moose" data-price="NGN 700.00" data-preptime="8 mins" data-availability="Available" data-image="IMAGES/dashboard1 (6).webp">
+                <img src="IMAGES/dashboard1 (6).webp" alt="Pancake">
+                <div class="meal-info">
+                    <h3>Pancake</h3>
+                    <p>Fluffy pancakes by <br> Chef Moose</p>
+                    <p>NGN 1000.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        
+            <div class="meal-card" data-name="Fried Rice" data-description="Special fried rice with vegetables by Chef Moose" data-price="NGN 1,200.00" data-preptime="15 mins" data-availability="Available" data-image="IMAGES/dashboard1 (7).webp">
+                <img src="IMAGES/dashboard1 (7).webp" alt="Fried Rice">
+                <div class="meal-info">
+                    <h3>Fried Rice</h3>
+                    <p>Special fried rice with <br> vegetables by Chef Moose</p>
+                    <p>NGN 1,000.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+</div>
+</div>
+
+<div id="cartOverlay">
+    <div class="cart-content">
+        <h2>Your Cart</h2>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Qty</th>
+                    <th>Unit Price</th>
+                    <th>Sub-total</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+            
+            </tbody>
+        </table>
+        <div class="cart-footer">
+            <span class="total-label">Total:</span>
+            <span class="total-price" id="cart-total">N 0.00</span>
+        </div>
+        <button id="checkout-button">Checkout</button>
+    </div>
+</div>
+
+    <script src="javascript/dashboard.js"></script>
+    <script src="javascript/your-cart.js"></script>
+</body>
+</html>
